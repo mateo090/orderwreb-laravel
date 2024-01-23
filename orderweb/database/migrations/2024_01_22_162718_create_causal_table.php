@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('causal', function (Blueprint $table) {
             $table->id();
-            $table->string('descriotion', 50)->comment('description causal');
+            $table->string('description', 50)->comment('description causal');
             $table->timestamps();
         });
     }

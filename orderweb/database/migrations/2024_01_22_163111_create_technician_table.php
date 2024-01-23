@@ -15,7 +15,7 @@ return new class extends Migration
             $table->unsignedBigInteger('document')->primary()->comment('cedula');
             $table->string('name', 80)->comment('nombre completo');
             $table->string('especiality',50 )->nullable()->comment('especialidad');
-            $table->string('ohone', 30)->nullable()->comment('telefono');
+            $table->string('phone', 30)->nullable()->comment('telefono');
             $table->timestamps();
         });
     }
