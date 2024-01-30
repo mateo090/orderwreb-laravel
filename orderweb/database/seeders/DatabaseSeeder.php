@@ -45,5 +45,6 @@ class DatabaseSeeder extends Seeder
         ]);
         //Tecnico sin especialidad
         Technician::factory(2)->create();
+        $this->call(TestOrderActivitySeeder::class);
     }
 }
